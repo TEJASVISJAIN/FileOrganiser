@@ -1,6 +1,6 @@
 const helpModule = require("./commands/help");
 const organizeModule = require("./commands/organize");
-const treeModule = require("./commands/tree");
+// const treeModule = require("./commands/tree");
 let inputArr = process.argv.slice(2);
 
 //[Node FO.js tree folderpath]
@@ -12,7 +12,7 @@ switch (command) {
     console.log("Tree Implemented")
     break;
   case "organize":
-    organizeModule.organizeKey(inputArr[1]);
+    organizeModule.organizeKey(inputArr[1], inputArr[2]);
     break;
   case "help":
     helpModule.helpKey();
